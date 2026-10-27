@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+version = '1.0.0'
+group = 'com.example.undoo'
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+neoForge {
+    version = '26.2.0.90'
+    runs { client { client() } server { server() } }
+    mods { undoo { sourceSet sourceSets.main } }
+}
