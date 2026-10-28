@@ -11,9 +11,14 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 neoForge {
     version = '26.2.0.90'
 
-    runs { 
-        client { client() } 
-        server { server() } 
+    runs {
+        client { client() }
+        server { server() }
     }
-    mods { undoo { sourceSet sourceSets.main } }
+    
+    mods {
+        undoo {
+            sourceSet sourceSets.main
+        }
+    }
 }
