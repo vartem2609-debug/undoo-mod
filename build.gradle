@@ -10,7 +10,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
     version = '26.2.0.90'
-    minecraft = '26.2'
+    minecraftVersion = '26.2'
     
     runs { 
         client { client() } 
